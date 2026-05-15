@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-15T11:32:42 IST" name="Default suite" finished-at="2026-05-15T11:32:49 IST" duration-ms="7154">
+  <suite started-at="2026-05-15T12:22:55 IST" name="Default suite" finished-at="2026-05-15T12:23:00 IST" duration-ms="5397">
     <groups>
     </groups>
-    <test started-at="2026-05-15T11:32:42 IST" name="Default test" finished-at="2026-05-15T11:32:49 IST" duration-ms="7154">
-      <class name="TutorialsNinja.Register.TC_RF_003">
-        <test-method signature="VerifyRegisteringanAccountbyprovidingalltheFields()[pri:0, instance:TutorialsNinja.Register.TC_RF_003@4135c3b]" started-at="2026-05-15T11:32:42 IST" name="VerifyRegisteringanAccountbyprovidingalltheFields" finished-at="2026-05-15T11:32:49 IST" duration-ms="7079" status="PASS">
+    <test started-at="2026-05-15T12:22:55 IST" name="Default test" finished-at="2026-05-15T12:23:00 IST" duration-ms="5397">
+      <class name="TutorialsNinja.Register.TC_RF_004">
+        <test-method signature="VerifypropernotificationmessagesaredisplayedforthemandatoryFields()[pri:0, instance:TutorialsNinja.Register.TC_RF_004@2a65fe7c]" started-at="2026-05-15T12:22:55 IST" name="VerifypropernotificationmessagesaredisplayedforthemandatoryFields" finished-at="2026-05-15T12:23:00 IST" duration-ms="5279" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyRegisteringanAccountbyprovidingalltheFields -->
-      </class> <!-- TutorialsNinja.Register.TC_RF_003 -->
+        </test-method> <!-- VerifypropernotificationmessagesaredisplayedforthemandatoryFields -->
+      </class> <!-- TutorialsNinja.Register.TC_RF_004 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
