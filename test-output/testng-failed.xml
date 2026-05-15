@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TutorialsNinja.Register.TC_RF_005">
+      <class name="TutorialsNinja.Register.TC_RF_009">
         <methods>
-          <include name="VerifyAccountRegistrationWhenTheYesOptionIsSelectedForTheNewsletterField"/>
+          <include name="VerifyRegisteringAccountWithExistingEmail"/>
         </methods>
-      </class> <!-- TutorialsNinja.Register.TC_RF_005 -->
+      </class> <!-- TutorialsNinja.Register.TC_RF_009 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
