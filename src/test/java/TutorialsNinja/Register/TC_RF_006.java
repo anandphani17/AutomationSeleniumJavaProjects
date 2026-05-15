@@ -13,7 +13,7 @@ public class TC_RF_006 {
 	
 	
 	@Test
-	public void VerifyAccountRegistrationWhenTheNoOptionIsSelectedForTheNewsletterField() {
+	public void VerifyAccountRegistrationWithNoOptionIsSelectedForTheNewsletterField() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
@@ -35,11 +35,14 @@ public class TC_RF_006 {
 		Assert.assertTrue(driver.findElement(By.xpath("//ul[@class='breadcrumb']//a[normalize-space()='Newsletter']")).isDisplayed());
 		Assert.assertTrue(driver.findElement(By.xpath("//input[@value='0']")).isSelected());
 					
-	
+		driver.quit();
 }
 
 public  String generateNewEmail(){
-	return new Date().toString().replaceAll("\\s", "").replaceAll("\\:","")+"@gmail.com";
+	Date date = new Date();
+	String dateString = date.toString();
+	return dateString.replaceAll("\\s", "").replaceAll("\\:", "")+ "@gmail.com";
+	//return new Date().toString().replaceAll("\\s", "").replaceAll("\\:","")+"@gmail.com";
 }
 
 }
