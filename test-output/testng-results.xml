@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-15T15:24:00 IST" name="Default suite" finished-at="2026-05-15T15:24:07 IST" duration-ms="7674">
+  <suite started-at="2026-05-15T16:42:46 IST" name="Default suite" finished-at="2026-05-15T16:42:53 IST" duration-ms="6136">
     <groups>
     </groups>
-    <test started-at="2026-05-15T15:24:00 IST" name="Default test" finished-at="2026-05-15T15:24:07 IST" duration-ms="7674">
-      <class name="TutorialsNinja.Register.TC_RF_006">
-        <test-method signature="VerifyAccountRegistrationWithNoOptionIsSelectedForTheNewsletterField()[pri:0, instance:TutorialsNinja.Register.TC_RF_006@4135c3b]" started-at="2026-05-15T15:24:00 IST" name="VerifyAccountRegistrationWithNoOptionIsSelectedForTheNewsletterField" finished-at="2026-05-15T15:24:07 IST" duration-ms="7600" status="PASS">
+    <test started-at="2026-05-15T16:42:46 IST" name="Default test" finished-at="2026-05-15T16:42:53 IST" duration-ms="6136">
+      <class name="TutorialsNinja.Register.TC_RF_007">
+        <test-method signature="VerifyDifferentWaysOfNavigatingToRegisterAccountPage()[pri:0, instance:TutorialsNinja.Register.TC_RF_007@2a65fe7c]" started-at="2026-05-15T16:42:47 IST" name="VerifyDifferentWaysOfNavigatingToRegisterAccountPage" finished-at="2026-05-15T16:42:53 IST" duration-ms="6059" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAccountRegistrationWithNoOptionIsSelectedForTheNewsletterField -->
-      </class> <!-- TutorialsNinja.Register.TC_RF_006 -->
+        </test-method> <!-- VerifyDifferentWaysOfNavigatingToRegisterAccountPage -->
+      </class> <!-- TutorialsNinja.Register.TC_RF_007 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
