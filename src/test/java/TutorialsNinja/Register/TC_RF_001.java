@@ -12,6 +12,7 @@ import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -61,7 +62,9 @@ public class TC_RF_001 {
 		
 		driver.findElement(By.xpath("//a[normalize-space()='Continue']")).click();
 		
-		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+		
+		WebElement editInfo = driver.findElement(By.linkText("Edit your account information"));
+		Assert.assertTrue(editInfo.isDisplayed());
 		
 		driver.quit();
 		} 
