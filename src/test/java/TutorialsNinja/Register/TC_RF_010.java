@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
@@ -52,13 +53,11 @@ public class TC_RF_010 {
 		ImageDiffer imgDiffer = new ImageDiffer();
 		
 		ImageDiff ImgDifference = imgDiffer.makeDiff(expectedBImg, actualBImg);
-		boolean b = ImgDifference.hasDiff();
-		System.out.println(b);
+		Assert.assertFalse(ImgDifference.hasDiff());		
 		
 		
 		
-		
-		
+		driver.quit();
 		
 		
 		
