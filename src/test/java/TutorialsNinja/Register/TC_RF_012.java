@@ -34,7 +34,10 @@ public class TC_RF_012 {
 			}
 			
 				actions.sendKeys("Anand").sendKeys(Keys.TAB).sendKeys("Phani").sendKeys(Keys.TAB).sendKeys(CommonUtils.generateNewEmail())
-				.sendKeys(Keys.TAB).sendKeys("123456789").sendKeys(Keys.TAB).sendKeys("12345").sendKeys(Keys.TAB).sendKeys	("12345").pause(Duration.ofSeconds(1)).sendKeys(Keys.TAB).pause(Duration.ofSeconds(1)).sendKeys(Keys.LEFT).pause(Duration.ofSeconds(1)).sendKeys(Keys.TAB).pause(Duration.ofSeconds(1)).sendKeys(Keys.TAB).pause(Duration.ofSeconds(1)).sendKeys(Keys.SPACE).pause(Duration.ofSeconds(1)).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).build().perform();
+				.sendKeys(Keys.TAB).sendKeys("123456789").sendKeys(Keys.TAB).sendKeys("12345").sendKeys(Keys.TAB).sendKeys	("12345")
+				.pause(Duration.ofSeconds(1)).sendKeys(Keys.TAB).pause(Duration.ofSeconds(1)).sendKeys(Keys.LEFT).pause(Duration.ofSeconds(1))
+				.sendKeys(Keys.TAB).pause(Duration.ofSeconds(1)).sendKeys(Keys.TAB).pause(Duration.ofSeconds(1))
+				.sendKeys(Keys.SPACE).pause(Duration.ofSeconds(1)).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).build().perform();
 				
 				Assert.assertTrue(driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']")).isDisplayed());
 				Assert.assertTrue(driver.findElement(By.xpath("//a[normalize-space()='Success']")).isDisplayed());

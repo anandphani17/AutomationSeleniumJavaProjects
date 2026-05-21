@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-21T12:25:48 IST" name="Default suite" finished-at="2026-05-21T12:26:01 IST" duration-ms="13053">
+  <suite started-at="2026-05-21T15:57:05 IST" name="Default suite" finished-at="2026-05-21T15:57:13 IST" duration-ms="7521">
     <groups>
     </groups>
-    <test started-at="2026-05-21T12:25:48 IST" name="Default test" finished-at="2026-05-21T12:26:01 IST" duration-ms="13053">
-      <class name="TutorialsNinja.Register.TC_RF_012">
-        <test-method signature="VerifyAccountRegistrationUsingKeyboardKeys()[pri:0, instance:TutorialsNinja.Register.TC_RF_012@459e9125]" started-at="2026-05-21T12:25:48 IST" name="VerifyAccountRegistrationUsingKeyboardKeys" finished-at="2026-05-21T12:26:01 IST" duration-ms="12976" status="PASS">
+    <test started-at="2026-05-21T15:57:05 IST" name="Default test" finished-at="2026-05-21T15:57:13 IST" duration-ms="7521">
+      <class name="TutorialsNinja.Register.TC_RF_013">
+        <test-method signature="VerifyAllFieldsInRegisterAccountPageHaveProperPlaceholders()[pri:0, instance:TutorialsNinja.Register.TC_RF_013@459e9125]" started-at="2026-05-21T15:57:05 IST" name="VerifyAllFieldsInRegisterAccountPageHaveProperPlaceholders" finished-at="2026-05-21T15:57:13 IST" duration-ms="7437" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAccountRegistrationUsingKeyboardKeys -->
-      </class> <!-- TutorialsNinja.Register.TC_RF_012 -->
+        </test-method> <!-- VerifyAllFieldsInRegisterAccountPageHaveProperPlaceholders -->
+      </class> <!-- TutorialsNinja.Register.TC_RF_013 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
