@@ -25,7 +25,7 @@ public class TC_RF_010 {
 	public void VerifyAccountRegistrationWithInvalidEmailAddress() throws InterruptedException, IOException {
 		
 		WebDriver driver =  new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");
 		
@@ -46,23 +46,39 @@ public class TC_RF_010 {
 		File srcScreenshot1 = driver.findElement(By.xpath("//form[@class='form-horizontal']")).getScreenshotAs(OutputType.FILE);
 		// to copy the file use filehandler from selenium
 		FileHandler.copy(srcScreenshot1, new File(System.getProperty("user.dir")+"\\Screenshots\\sc1Actual.png"));
+		Thread.sleep(3000);
+		Assert.assertFalse(CompareTwoScreenshots(System.getProperty("user.dir")+"\\Screenshots\\sc1Actual.png", System.getProperty("user.dir")+"\\Screenshots\\sc1Expected.png"));		
 		
-		BufferedImage actualBImg = ImageIO.read(new File(System.getProperty("user.dir")+"\\Screenshots\\sc1Actual.png"));
-		BufferedImage expectedBImg = ImageIO.read(new File(System.getProperty("user.dir")+"\\Screenshots\\sc1Expected.png"));
 		
-		ImageDiffer imgDiffer = new ImageDiffer();
+		driver.findElement(By.xpath("//input[@id='input-email']")).clear();
+		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("amotoori@");
+		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		
-		ImageDiff ImgDifference = imgDiffer.makeDiff(expectedBImg, actualBImg);
-		Assert.assertFalse(ImgDifference.hasDiff());		
+		Thread.sleep(3000);
 		
+		
+		File scrScreenshot2 =  driver.findElement(By.xpath("//form[@class='form-horizontal']")).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(scrScreenshot2, new File(System.getProperty("user.dir")+"\\Screenshots\\sc2Expected.png"));
+		
+		Assert.assertFalse(CompareTwoScreenshots(System.getProperty("user.dir")+"\\Screenshots\\sc2Actual.png", System.getProperty("user.dir")+"\\Screenshots\\sc2Expected.png"));	
 		
 		
 		driver.quit();
 		
 		
-		
-		
-	
-	
 	}
+	
+	public boolean CompareTwoScreenshots(String actualImagePath, String expectedImagePath) throws IOException {
+		BufferedImage actualBImg = ImageIO.read(new File(actualImagePath));
+		BufferedImage expectedBImg = ImageIO.read(new File(expectedImagePath));
+		
+		ImageDiffer imgDiffer = new ImageDiffer();
+		
+		ImageDiff ImgDifference = imgDiffer.makeDiff(expectedBImg, actualBImg);
+		return ImgDifference.hasDiff();
+	}
+	
+	
+	
+	
 }
