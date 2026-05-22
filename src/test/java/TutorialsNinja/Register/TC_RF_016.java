@@ -55,7 +55,7 @@ public class TC_RF_016 {
 		Assert.assertEquals(actualTelephoneWarning, telephoneWarning);
 		Assert.assertEquals(actualPasswordWarning, passwordWarning);
 		
-		
+		driver.quit();
 		
 	}
 
