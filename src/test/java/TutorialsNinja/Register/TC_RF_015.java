@@ -36,9 +36,9 @@ public class TC_RF_015 {
 			driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
 			driver.findElement(By.xpath("//a[normalize-space()='Register']")).click();
 			
-			String firstName = "Vadappali";
+			String firstName = "sita";
 			driver.findElement(By.xpath("//input[@id='input-firstname']")).sendKeys(firstName);
-			String lastName ="venkateshwaraswami";
+			String lastName ="ram";
 			driver.findElement(By.xpath("//input[@id='input-lastname']")).sendKeys(lastName);
 			String email = CommonUtils.generateNewEmail();
 			driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(email);
@@ -81,7 +81,7 @@ public class TC_RF_015 {
 			// SQL Query
 
 			String query =
-					"SELECT * FROM oc_customer WHERE firstname = 'Vadappali'";
+					"SELECT * FROM oc_customer WHERE email='" + email + "'";
 			// Execute Query
 
 			ResultSet rs = stmt.executeQuery(query);
