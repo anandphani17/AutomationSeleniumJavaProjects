@@ -15,15 +15,12 @@ public class TC_RF_014 {
 	
 	WebDriver driver;
 	
-	private static final String String = null;
 	
-	@AfterMethod
-	public void tearDown() {
-		driver.quit(); 
-	}
-
 	@Test
 	 public void VerifyMandatoryFieldsAreMarkedWithRedAsteriskSymbol() {
+		
+		
+
 		 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -96,11 +93,13 @@ public class TC_RF_014 {
 		Assert.assertEquals(privacyColor, expectedColor);
 		
 		
-		
-		
-		
-			
+				
 		
 	 }
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit(); 
+	}
 
 }
