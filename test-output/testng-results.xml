@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-25T15:51:30 IST" name="Default suite" finished-at="2026-05-25T15:51:36 IST" duration-ms="6304">
+  <suite started-at="2026-05-25T15:59:26 IST" name="Default suite" finished-at="2026-05-25T15:59:34 IST" duration-ms="7933">
     <groups>
     </groups>
-    <test started-at="2026-05-25T15:51:30 IST" name="Default test" finished-at="2026-05-25T15:51:36 IST" duration-ms="6304">
-      <class name="TutorialsNinja.Register.TC_RF_020">
-        <test-method signature="VerifyPrivacyPolicyCheckboxIsNotSelectedByDefault()[pri:0, instance:TutorialsNinja.Register.TC_RF_020@4d5d943d]" started-at="2026-05-25T15:51:30 IST" name="VerifyPrivacyPolicyCheckboxIsNotSelectedByDefault" finished-at="2026-05-25T15:51:36 IST" duration-ms="6189" status="PASS">
+    <test started-at="2026-05-25T15:59:26 IST" name="Default test" finished-at="2026-05-25T15:59:34 IST" duration-ms="7933">
+      <class name="TutorialsNinja.Register.TC_RF_021">
+        <test-method signature="VerifyAccountRegistrationWithoutSelectingPrivacyPolicyCheckbox()[pri:0, instance:TutorialsNinja.Register.TC_RF_021@4d5d943d]" started-at="2026-05-25T15:59:26 IST" name="VerifyAccountRegistrationWithoutSelectingPrivacyPolicyCheckbox" finished-at="2026-05-25T15:59:34 IST" duration-ms="7857" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyPrivacyPolicyCheckboxIsNotSelectedByDefault -->
-      </class> <!-- TutorialsNinja.Register.TC_RF_020 -->
+        </test-method> <!-- VerifyAccountRegistrationWithoutSelectingPrivacyPolicyCheckbox -->
+      </class> <!-- TutorialsNinja.Register.TC_RF_021 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
