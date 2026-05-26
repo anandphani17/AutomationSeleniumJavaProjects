@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-26T14:58:33 IST" name="Default suite" finished-at="2026-05-26T14:58:37 IST" duration-ms="4867">
+  <suite started-at="2026-05-26T15:21:55 IST" name="Default suite" finished-at="2026-05-26T15:22:30 IST" duration-ms="35284">
     <groups>
     </groups>
-    <test started-at="2026-05-26T14:58:33 IST" name="Default test" finished-at="2026-05-26T14:58:37 IST" duration-ms="4867">
-      <class name="TutorialsNinja.Register.TC_RF_022">
-        <test-method signature="VerifyPasswordFieldsHideEnteredTextVisibility()[pri:0, instance:TutorialsNinja.Register.TC_RF_022@48f2bd5b]" started-at="2026-05-26T14:58:33 IST" name="VerifyPasswordFieldsHideEnteredTextVisibility" finished-at="2026-05-26T14:58:37 IST" duration-ms="4793" status="PASS">
+    <test started-at="2026-05-26T15:21:55 IST" name="Default test" finished-at="2026-05-26T15:22:30 IST" duration-ms="35284">
+      <class name="TutorialsNinja.Register.TC_RF_023">
+        <test-method signature="verifyWorkingOfEveryLinkOnRegisterAccountPage()[pri:0, instance:TutorialsNinja.Register.TC_RF_023@368f2016]" started-at="2026-05-26T15:21:55 IST" name="verifyWorkingOfEveryLinkOnRegisterAccountPage" finished-at="2026-05-26T15:22:30 IST" duration-ms="35206" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyPasswordFieldsHideEnteredTextVisibility -->
-      </class> <!-- TutorialsNinja.Register.TC_RF_022 -->
+        </test-method> <!-- verifyWorkingOfEveryLinkOnRegisterAccountPage -->
+      </class> <!-- TutorialsNinja.Register.TC_RF_023 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
