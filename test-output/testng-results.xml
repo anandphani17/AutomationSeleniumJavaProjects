@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-26T15:21:55 IST" name="Default suite" finished-at="2026-05-26T15:22:30 IST" duration-ms="35284">
+  <suite started-at="2026-05-26T15:28:34 IST" name="Default suite" finished-at="2026-05-26T15:28:40 IST" duration-ms="6739">
     <groups>
     </groups>
-    <test started-at="2026-05-26T15:21:55 IST" name="Default test" finished-at="2026-05-26T15:22:30 IST" duration-ms="35284">
-      <class name="TutorialsNinja.Register.TC_RF_023">
-        <test-method signature="verifyWorkingOfEveryLinkOnRegisterAccountPage()[pri:0, instance:TutorialsNinja.Register.TC_RF_023@368f2016]" started-at="2026-05-26T15:21:55 IST" name="verifyWorkingOfEveryLinkOnRegisterAccountPage" finished-at="2026-05-26T15:22:30 IST" duration-ms="35206" status="PASS">
+    <test started-at="2026-05-26T15:28:34 IST" name="Default test" finished-at="2026-05-26T15:28:40 IST" duration-ms="6739">
+      <class name="TutorialsNinja.Register.TC_RF_024">
+        <test-method signature="verifyRegisteringAccountWithoutEnteringPasswordIntoPasswordConfirmField()[pri:0, instance:TutorialsNinja.Register.TC_RF_024@4d5d943d]" started-at="2026-05-26T15:28:34 IST" name="verifyRegisteringAccountWithoutEnteringPasswordIntoPasswordConfirmField" finished-at="2026-05-26T15:28:40 IST" duration-ms="6657" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWorkingOfEveryLinkOnRegisterAccountPage -->
-      </class> <!-- TutorialsNinja.Register.TC_RF_023 -->
+        </test-method> <!-- verifyRegisteringAccountWithoutEnteringPasswordIntoPasswordConfirmField -->
+      </class> <!-- TutorialsNinja.Register.TC_RF_024 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
