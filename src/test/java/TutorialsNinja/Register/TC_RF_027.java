@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,7 +20,7 @@ import Utils.CommonUtils;
 public class TC_RF_027 {
 	
 	@Test(dataProvider="environmentsSupplier")
-	public void verifyRegisteringAccountInDifferentTestEnvironments(String env) {
+	public void verifyRegisteringAccountInDifferentTestEnvironments(String env) throws IllegalAccessException {
 		
 		String browserName = env;
 		
@@ -27,8 +28,12 @@ public class TC_RF_027 {
 		
 		if(browserName.equals("chrome")) {
 			driver = new ChromeDriver();
+		}else if (browserName.equals("firefox")) {
+			driver = new FirefoxDriver();
 		}else if (browserName.equals("edge")) {
 			driver = new EdgeDriver();
+		}else {
+			throw new IllegalAccessException("Browser not supported"+ browserName);
 		}
 		
 		driver.manage().window().maximize();
@@ -59,7 +64,7 @@ public class TC_RF_027 {
 	@DataProvider(name="environmentsSupplier")
 	public Object[][] passTestEnvironments() {
 		
-		Object[][] envs = {{"chrome"},{"edge"}};
+		Object[][] envs = {{"chrome"},{"firefox"},{"edge"}};
 		return envs;
 		
 	}
