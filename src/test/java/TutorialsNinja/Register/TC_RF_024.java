@@ -37,7 +37,7 @@ public class TC_RF_024 {
 		String expectedWarning = "Password confirmation does not match password!";
 		Assert.assertEquals(driver.findElement(By.xpath("//input[@id='input-confirm']/following-sibling::div")).getText(), expectedWarning);
 		
-		//driver.quit();
+		driver.quit();
 		
 	}
 
